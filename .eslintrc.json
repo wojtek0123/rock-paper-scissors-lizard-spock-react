@@ -1,19 +1,41 @@
 {
-	"env": {
-		"browser": true,
-		"es2021": true
-	},
-	"extends": ["plugin:react/recommended", "airbnb"],
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"ecmaVersion": "latest",
-		"sourceType": "module"
-	},
-	"plugins": ["react", "@typescript-eslint"],
-	"rules": {
-		"react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }]
-	}
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "path": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "linebreak-style": ["off", "windows"],
+    "import/extensions": ".tsx"
+  }
 }
