@@ -1,0 +1,19 @@
+.rock {
+	background-image: var(--rock-gradient);
+}
+
+.paper {
+	background-image: var(--paper-gradient);
+}
+
+.scissors {
+	background-image: var(--scissors-gradient);
+}
+
+.lizard {
+	background-image: var(--lizard-gradient);
+}
+
+.spock {
+	background-image: var(--spock-gradient);
+}

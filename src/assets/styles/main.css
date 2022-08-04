@@ -1,0 +1,264 @@
+.app {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin-inline: 1.5em;
+}
+
+.border {
+	align-items: center;
+	border: 0.1em solid transparent;
+	border-radius: 50%;
+	box-shadow: 0 5px 15px var(--modal-shadow);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+	position: absolute;
+	transition: transform 0.3s ease-out;
+}
+
+.border:hover {
+	transform: scale(1.1);
+}
+
+.circle {
+	align-items: center;
+	background-color: var(--light-text);
+	border: none;
+	border-radius: 50%;
+	box-shadow: inset 0 5px 0 var(--circle-shadow);
+	display: flex;
+	height: 5.5em;
+	justify-content: center;
+	padding: 1.5em;
+	width: 5.5em;
+}
+
+.circle img {
+	width: 100%;
+}
+
+.main {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 15em;
+	height: 100%;
+}
+
+.header {
+	align-items: center;
+	border: 3px solid var(--header-outline);
+	border-radius: var(--radius);
+	display: flex;
+	justify-content: space-between;
+	margin: 2em;
+	max-width: 800px;
+	padding: 0.75em 0.75em 0.75em 1.5em;
+	width: 100%;
+}
+
+.header h1 {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.header img {
+	height: 4rem;
+}
+
+.score-container {
+	background-color: var(--light-text);
+	border-radius: var(--radius);
+	padding: 0.5em 1.75em;
+}
+
+.score-container p:first-child {
+	color: var(--score-text);
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.score-container p:last-child {
+	font-size: 2.2rem;
+	color: var(--dark-text);
+}
+
+.score-container p {
+	text-align: center;
+}
+
+.symbols-container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.scissors {
+	left: calc(50% - translateX(-50%));
+	top: -2em;
+}
+
+.paper {
+	right: -3.5em;
+	top: 3.5em;
+}
+
+.rock {
+	bottom: -4em;
+	right: 0em;
+}
+
+.lizard {
+	bottom: -4em;
+	left: 0em;
+}
+
+.spock {
+	top: 3.5em;
+	left: -3.5em;
+}
+
+.pentagon {
+	width: 15em;
+}
+
+.rules {
+	color: var(--light-text);
+	background: none;
+	border: 1px solid var(--light-text);
+	border-radius: var(--radius);
+	cursor: pointer;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	margin-inline: auto;
+	padding: 0.5em 2em;
+	text-transform: uppercase;
+	transition: color 0.3s, background-color 0.3s;
+	width: min-content;
+}
+
+.rules:hover {
+	background-color: var(--light-text);
+	color: var(--dark-text);
+}
+
+.picked-wrapper {
+	display: grid;
+	gap: 0 2em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	place-items: center;
+	width: 100%;
+}
+
+.picked-wrapper p {
+	color: var(--light-text);
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.picked-circle {
+	align-items: center;
+	background-color: var(--light-text);
+	border: none;
+	border-radius: 50%;
+	box-shadow: inset 0 5px 0 var(--circle-shadow);
+	display: flex;
+	height: 6.5em;
+	justify-content: center;
+	padding: 1.5em;
+	width: 6.5em;
+}
+
+.picked-circle img {
+	height: 100%;
+	width: 100%;
+}
+
+.picked-border {
+	align-items: center;
+	border: 0.1em solid transparent;
+	border-radius: 50%;
+	box-shadow: 0 5px 15px var(--modal-shadow);
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+}
+
+.attribution {
+	color: var(--light-text);
+	margin-bottom: 0.2em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.attribution a {
+	color: var(--light-text);
+	padding-left: 0.25em;
+	transition: text-decoration 0.3s;
+}
+
+.attribution a:hover {
+	text-decoration: none;
+}
+
+.choice-placeholder {
+	border-radius: 50%;
+	background-color: var(--circle-shadow);
+	height: 6.5em;
+	width: 6.5em;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.show {
+	animation: fade-in 2s;
+	visibility: visible;
+}
+
+.result {
+	color: var(--light-text);
+	grid-column: 1 / 3;
+	text-align: center;
+}
+
+.result h2 {
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.result button {
+	background-color: var(--light-text);
+	border: 1px solid transparent;
+	border-radius: var(--radius);
+	color: var(--dark-text);
+	cursor: pointer;
+	font-size: 1.2rem;
+	margin-top: 1em;
+	padding: 0.75em 3em;
+	text-transform: uppercase;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.result button:hover {
+	background-color: transparent;
+	border: 1px solid var(--light-text);
+	color: var(--light-text);
+}
+
+.winner-circle {
+	animation: fade-in-shadow 1s;
+	box-shadow: var(--winner-shadow-mobile);
+	position: relative;
+}

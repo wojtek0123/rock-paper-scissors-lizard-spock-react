@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import rulesImage from '../assets/images/image-rules-bonus.svg'
-import closeIcon from '../assets/images/icon-close.svg'
-import classes from './Modal.module.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import rulesImage from '../assets/images/image-rules-bonus.svg';
+import closeIcon from '../assets/images/icon-close.svg';
+import classes from './Modal.module.css';
 
-const modalRoot = document.getElementById('modal-root')!
+const modalRoot = document.getElementById('modal-root')!;
 
 type ModalProps = {
-  closeHandler: () => void
-}
+  closeHandler: () => void;
+};
 
 function RulesModal({ closeHandler }: ModalProps) {
   return (
@@ -19,7 +19,8 @@ function RulesModal({ closeHandler }: ModalProps) {
           <button
             type='button'
             className={classes.closeDesktop}
-            onClick={closeHandler}>
+            onClick={closeHandler}
+          >
             <img src={closeIcon} alt='Close rules modal' />
           </button>
         </div>
@@ -27,20 +28,21 @@ function RulesModal({ closeHandler }: ModalProps) {
         <button
           type='button'
           className={classes.closeMobile}
-          onClick={closeHandler}>
+          onClick={closeHandler}
+        >
           <img src={closeIcon} alt='Close rules modal' />
         </button>
       </div>
-      <div className={classes.shadow}></div>
+      <div className={classes.shadow} />
     </>
-  )
+  );
 }
 
 function Modal({ closeHandler }: ModalProps) {
   return ReactDOM.createPortal(
     <RulesModal closeHandler={closeHandler} />,
-    modalRoot
-  )
+    modalRoot,
+  );
 }
 
-export default Modal
+export default Modal;
