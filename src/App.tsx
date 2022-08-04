@@ -63,9 +63,11 @@ const symbols: Symbols[] = [
   },
 ];
 
+const initialScore = localStorage.getItem('score') || 0;
+
 function App() {
   const [showRules, setShowRules] = useState(false);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(+initialScore);
   const [userChoice, setUserChoice] = useState<Symbols>();
   const [computerChoice, setComputerChoice] = useState<Symbols>();
   const [isGameFinished, setIsGameFinished] = useState(false);
@@ -123,6 +125,7 @@ function App() {
     setTimeout(() => {
       compareChoices();
     }, 500);
+    localStorage.setItem('score', score.toString());
   }, [compareChoices]);
 
   return (

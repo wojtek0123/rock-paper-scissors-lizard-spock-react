@@ -260,5 +260,5 @@
 .winner-circle {
 	animation: fade-in-shadow 1s;
 	box-shadow: var(--winner-shadow-mobile);
-	position: relative;
+	border-radius: 50%;
 }
