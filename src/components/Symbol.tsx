@@ -53,15 +53,14 @@ export default function Symbol({
   }
 
   return (
-    <button
-      type='button'
+    <div
       className={`${borderClasses} ${classes[cssClass]}`}
       onClick={() => choiceHandler(id)}
     >
       <div className={circleClasses}>
         <img src={src} alt={alt} />
       </div>
-    </button>
+    </div>
   );
 }
 
