@@ -13,8 +13,6 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -27,12 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-09-39%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-10-30%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-10-41%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-11-09%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-11-28%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
-![](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-11-35%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
+![Main stage where users can select finger symbol](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-09-39%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
+![Final stage of the game where user can see who win](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-10-30%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
+![Rules how to play the game, who beats who](./public/assets/screenshots/Screenshot%202022-08-05%20at%2013-10-41%20Rock%20Paper%20Scissors%20Lizard%20and%20Spock%20Game.png)
 
 ### Links
 
