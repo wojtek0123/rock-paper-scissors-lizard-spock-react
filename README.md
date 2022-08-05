@@ -2,6 +2,12 @@
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+# How to install on your local machine.
+1) `git clone https://github.com/wojtek0123/rock-paper-scissors-lizard-spock-react.git`
+2) `cd rock-paper-scissors-lizard-spock-react`
+3) `npm ci` or `npm i`
+4) `npm run dev`
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -31,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Live Site URL: [Live site URL here](https://rock-paper-scissors-lizard-spock-react.vercel.app/)
 
 ## My process
 
