@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/react-typescript-eslint-vite-ebTdNm7tm4)
 - Live Site URL: [Live site URL here](https://rock-paper-scissors-lizard-spock-react.vercel.app/)
 
 ## My process
