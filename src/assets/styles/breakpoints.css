@@ -181,7 +181,6 @@
 
 	.winner-circle {
 		box-shadow: var(--winner-shadow-desktop);
-		border-radius: 50%;
 	}
 }
 
